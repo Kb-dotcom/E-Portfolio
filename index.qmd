@@ -1,26 +1,23 @@
 ---
-title: "My E-Portfolio"
-image: images/MGEM_logo.png
+title: "Kelvin Boateng"
+image: images/Kel2026.jpeg
 about:
   template: trestles
-  image-width: 20em
+  image-width: 8em
   links: 
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/in/ramon-melser-666932129/
-    - icon: twitter
-      text: Twitter/X
-      href: https://x.com/MelserRamon
+      href: https://www.linkedin.com/in/kelvin-boateng-7b3793174/
     - icon: github
       text: GitHub
-      href: https://github.com/ramonmelser
+      href: https://github.com/Kb-dotcom
     - icon: envelope-at
       text: Email
-      href: mailto:melser@student.ubc.ca
+      href: mailto:boatengkelvin540@gmail.com
 ---
 
-Hey there people,
+I am a graduate student in the Master of Geomatics for Environmental Management (MGEM) program, Faculty of Forestry and Environmental Stewardship, at the University of British Columbia. My focus is on the use of geomatics and spatial data to support environmental analysis and decision-making.
 
-This is your E-Portfolio landing page. Be sure to upload a professional headshot of yourself, and provide the appropriate links to your professional social media (linkedin, X/Twitter, etc). This is also a good place to provide a short summary of your education, career and interests. If you are associated with a lab or working with a research supervisor, it may be appropriate to provide some information on that here, along with links to relevant websites.
+I have developed practical skills in GIS, remote sensing, and spatial analysis with coding (R-studio, Python, Google Earth Engine) through coursework that emphasized real-world applications. Each course challenged me to apply technical methods to environmental and resource management problems, building both my analytical capabilities and understanding of how these tools support decision-making in the field.
 
-Write something about myself, very exciting.
+This e-portfolio brings together the coursework, projects, and reflections from my time in the MGEM program. It showcases the technical skills and analytical methods I’ve developed, as well as my growth as a professional in this field. I’ve compiled this portfolio to demonstrate my capabilities and support my career goals in surveying, geomatics and environmental management.
