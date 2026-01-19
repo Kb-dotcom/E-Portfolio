@@ -4,36 +4,88 @@ title: "Resume"
 
 # Education
 
--   List your education here.
+• University of British Columbia | Master of Geomatics for Environmental Management        Jul 2025 – Apr 2026 (expected completion) 
 
-# Publications
+• University of Mines and Technology | Bachelor of Science, Geomatic Engineering                                Oct 2018 – Sept 2022 
 
-*Peer-reviewed publications:*
+# Technical Skills
 
--   List any peer-reviewed publications here.
+• GIS & Remote Sensing: QGIS, ArcGIS, Agisoft Metashape, Google Earth Engine 
 
-*Reports:*
+• Surveying Tools: AutoCAD Civil 3D, Topcon Tools, Magnet Tools, MapInfo 
 
--   List any non-peer reviewed materials you'd like to share here.
+• Programming & Data Science: Python (Intermediate), R (Intermediate), Java (OpenStreetMap API) 
 
-# Conferences & Talks
+• Equipment Proficiency: Total station, GPS, Dumpy Level 
 
-*Invited Talks*
+# Work Experience 
 
--   If you've been invited to speak in a professional setting, list that here.
+*Geomatic Engineer, Mac Partners Mining and Construction – Konongo, Ghana 	 	                                 Oct 2024 – July* 2025 
 
-*Conference Presentations*
+• Accurately set out tower cranes, CIL tanks, and ball mills using Stonex Total Station and Hi-Target equipment, ensuring precise alignment with the approved site layout.
 
--   If the presentation was at a conference, list them here.
+• Established anchor bolt positions for structural components, enabling secure installation of bolts and nuts for critical equipment. 
 
-# Awards & Honors
+• Verified excavation levels with a Bosch dumpy level to determine cut-and-fill requirements, optimizing earthwork planning and material usage. 
 
--   List any scholarships, bursaries, etc.
+• Re-ordinated control pillars using Hi-Target GPS to maintain spatial accuracy and integrity of site control points
 
-# Teaching Assistantships
 
--   List any TA positions you may have held.
+*Assistant Surveyor, Point Engineering, Accra 	 	 	 	 	                          	                          Aug 2024 – Oct 2024* 
 
-# Institutional Service
+• Conducted comprehensive topographic and construction surveys using Trimble, Sokkia, and CHCNAV GPS systems to produce accurate topography maps and as-built documentation. 
 
--   Volunteering etc.
+• Precisely marked reinforcement layouts, column positions, and base points to ensure correct structural alignment during construction. 
+
+• Successfully surveyed and profiled a 14 km road corridor using CHCNAV GPS, providing essential data for road design and engineering planning.
+
+*Geomatic Engineer Sedzie Survey Engineering, Accra 	 	 	 	 	                                                May 2024 – Aug 2024*
+
+• Performed detailed road profiling at designated chainages to generate accurate sectional road designs and construction data.
+
+• Executed land demarcation using E-Survey software and CHCNAV GPS to delineate property parcels and link road alignments with precision.
+
+• Developed high-quality topographical maps from survey data collected on-site, supporting design and planning processes.
+
+• Survey Assistant (NationalServicePersonnel) AM Surveys Ltd, Haatso–Accra  	 	                              Oct 2022 – Sep 2023 
+
+• Processed drone imagery using Agisoft Metashape to generate high-resolution orthophotos for accurate site representation. 
+
+• Produced detailed topographic maps in AutoCAD Civil 3D to support design and construction planning. 
+
+• Conducted precise parcel demarcation using E-Survey GPS, ensuring accurate land boundary delineation.
+
+
+# Leadership/Volunteering Experience 
+
+*Training Coordinator, UMaT  YouthMappers   	 	 	 	                                                         Jan 2021 – Oct 2022*
+
+• Conducted GIS training sessions and led OpenStreetMap mapping campaigns to enhance community mapping skills and spatial data accuracy. 
+
+• Trained team members on creating maps using GIS software, including QGIS and ArcMap, improving their technical proficiency in geospatial analysis. 
+
+• Organized and facilitated drone training sessions for mappers, covering the complete workflow of drone data acquisition and processing.
+
+• Mapped areas around Tema to support COVID-19 PPE distribution efforts, improving location data for emergency response. 
+
+• Contributed to streetlight and hydrant mapping projects through mobile and online OSM platforms, enhancing community    infrastructure data.
+
+*Vice President, Geomatic Engineering Student Association 	 	 	                                             Jan 2021 – Nov 2021*
+
+• Trained colleague students in using geospatial tools during tutorials organized by the department. 
+
+• Obtained funds to run our administration together with the other executives. 
+
+• Led the department in the registration of student members of the Ghana Institution of Surveyors. 
+
+
+
+# Certifications & Technical Training 
+
+• Geospatial Python Bootcamp (12 Days) – Dec 2024 
+
+• GIS for Climate Action (Esri MOOC) – Dec 2023 
+
+• QGIS Training Program (21 Days) – Jul 2020 
+
+• Drone Piloting and Data Processing, Soko Aerial Robotics – Jun 2019 
