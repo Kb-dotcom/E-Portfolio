@@ -3,7 +3,7 @@ title: "Kelvin Boateng"
 image: images/Kel2026.jpeg
 about:
   template: trestles
-  image-width: 8em
+  image-width: 12em
   links: 
     - icon: linkedin
       text: LinkedIn
@@ -16,8 +16,8 @@ about:
       href: mailto:boatengkelvin540@gmail.com
 ---
 
-I am a graduate student in the Master of Geomatics for Environmental Management (MGEM) program, Faculty of Forestry and Environmental Stewardship, at the University of British Columbia. My focus is on the use of geomatics and spatial data to support environmental analysis and decision-making.
+# About me
 
-I have developed practical skills in GIS, remote sensing, and spatial analysis with coding (R-studio, Python, Google Earth Engine) through coursework that emphasized real-world applications. Each course challenged me to apply technical methods to environmental and resource management problems, building both my analytical capabilities and understanding of how these tools support decision-making in the field.
+**Background**
 
-This e-portfolio brings together the coursework, projects, and reflections from my time in the MGEM program. It showcases the technical skills and analytical methods I’ve developed, as well as my growth as a professional in this field. I’ve compiled this portfolio to demonstrate my capabilities and support my career goals in surveying, geomatics and environmental management.
+I am a graduate student in the Master of Geomatics for Environmental Management program at the University of British Columbia, working at the intersection of GIS, land surveying, and environmental management. I am passionate about using spatial data and geomatics tools to understand and address real-world environmental challenges. My training and hands-on experience in GIS, remote sensing, and coding with R, Python, and Google Earth Engine enable me to translate complex datasets into actionable insights that support sustainable land use, resource planning, and environmental decision-making. I enjoy connecting field data with analytical tools to inform practical solutions and drive positive environmental outcomes. With extensive experience in land surveying and spatial analysis, I apply precision, technology, and environmental knowledge to solve practical problems. Combining coding, survey work, and spatial analysis has strengthened my ability to deliver accurate, actionable information that supports communities, organizations, and decision-makers in planning and managing resources responsibly. I am committed to advancing environmental management through the practical application of geomatics and survey expertise, translating data into solutions that make a tangible impact.

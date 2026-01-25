@@ -10,12 +10,12 @@ website:
         text: Home
       - href: resume.qmd
         text: Resume
-      - href: publications.qmd
-        text: Publications
-      - href: content.qmd
-        text: Content & Deliverables
       - href: projects.qmd
-        text: Projects
+        text: Academic Projects
+      - href: gis_technical_labs.qmd
+        text: GIS & Technical Work
+      - href: work_experience.qmd
+        text: Professional Experience
        
 format:
   html:

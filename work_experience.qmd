@@ -1,0 +1,133 @@
+---
+title: "Professional Experience"
+format: html
+editor: visual
+---
+
+
+## Gold Processing Plant Refurbishment & Construction at Northern Ashanti Mine (NAM)
+
+At Mac Partners Mining and Construction, I played an active role in the construction of a gold processing plant at Northern Ashanti Mine (NAM). My responsibilities went beyond field surveying, including reading and interpreting engineering and site plans, coordinating with site engineers, and inspecting operations alongside mine surveyors to ensure alignment with design specifications. In the field, I set out tower cranes, CIL tanks, and ball mills using Stonex Total Station and Hi-Target GNSS, and established anchor bolt positions for major structural components to guarantee precise installation. I verified excavation levels using a Bosch dumpy level, optimizing cut-and-fill operations, and re-established survey control pillars to maintain the accuracy and integrity of site measurements.
+Through this combination of fieldwork, technical analysis, and collaboration, I contributed to the efficiency and safety of mining operations, ensuring construction activities adhered to approved plans while maintaining spatial accuracy across the site.
+
+**Tools & Technologies**
+
+South total station, Stonex R35 total station,Sokkia 530r total station, Hi-Target V300 GNSS, Bosch dumpy level, AutoCad Civil 3D, MapInfo
+
+
+**Field Operations**
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=18, fig.height=12}
+library(jpeg)
+
+# File paths for 15 images
+image_paths <- paste0("C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/im", 1:15, ".jpeg")
+
+# Read images into a list
+images <- lapply(image_paths, readJPEG)
+
+# Layout: 3 rows x 5 columns
+par(mfrow = c(3,5), mar = c(0,0,0,0))  # remove margins for max image size
+
+# Loop over each cell
+for (i in 1:(3*5)) {
+  plot(0:1, 0:1, type='n', ann=FALSE, axes=FALSE)  # empty plot
+  if (i <= length(images)) {
+    rasterImage(images[[i]], 0, 0, 1, 1)           # fill the cell
+  }
+}
+
+
+```
+
+**Office plots**
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=20, fig.height=5}
+library(jpeg)
+
+# File paths for the three images
+image_paths <- c(
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/sp1.jpeg",
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/sp2.jpeg",
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/sp3.jpeg"
+)
+
+# Read images into a list
+images <- lapply(image_paths, readJPEG)
+
+# Layout: 1 row x 3 columns
+par(mfrow = c(1,3), mar = c(0,0,0,0))  # no margins for max image size
+
+# Loop through images
+for (i in 1:3) {
+  plot(0:1, 0:1, type='n', ann=FALSE, axes=FALSE)  # empty plotting area
+  rasterImage(images[[i]], 0, 0, 1, 1)            # fill the cell
+}
+
+```
+
+## Topographic & Construction Surveying for Building and Road Projects
+
+During my time at Point Engineering, I contributed to a variety of building, road, and irrigation farm surveying projects, working closely with the lead consultant surveyor and engaging in every step of the surveying process. On building projects, I carefully reviewed points set by contractor surveyors to ensure their accuracy and confirm that layouts matched the approved designs. For road networks and irrigation farm layouts, I collected precise topographic data using Trimble, Sokkia, and CHCNAV GNSS equipment, setting out reinforcement positions, column locations, base points, and road alignments while making sure all work met engineering specifications. I also surveyed and profiled a 14 km road corridor, generating longitudinal and cross-sectional data essential for design and planning. Beyond fieldwork, I collaborated closely with engineers and project managers to interpret survey results, resolve discrepancies, and produce detailed maps, reports, and visualizations that helped guide construction and infrastructure development.
+
+**Tools & Technologies**
+
+Trimble total station, Trimble GPS, Sokkia 530r total station, CHC NAV GPS, AutoCad Civil 3D
+
+
+**Fieldworks**
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=16, fig.height=8}
+library(jpeg)
+
+# File paths for images T1 to T8
+image_paths <- paste0("C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/T", 1:8, ".jpeg")
+
+# Read images into a list
+images <- lapply(image_paths, readJPEG)
+
+# Layout: 2 rows x 4 columns
+par(mfrow = c(2,4), mar = c(0,0,0,0))  # remove margins for max image size
+
+# Loop through images and plot
+for (i in 1:8) {
+  plot(0:1, 0:1, type='n', ann=FALSE, axes=FALSE)  # empty plotting area
+  rasterImage(images[[i]], 0, 0, 1, 1)            # fill the cell
+}
+
+
+```
+
+
+## Drone Mapping & Cadastral/Topographical Surveys
+
+Contributions at AM Surveys Ltd involved a range of survey and mapping projects that integrated drone-based imagery, topographical surveys, cadastral work, and GIS analysis. Operating the Delta Quad drone, I collected high-resolution aerial imagery to monitor waterbody conditions and mapped aquatic vegetation using Picterra software, generating actionable data for environmental assessments. I also performed cadastral and topographical surveys, creating accurate plots in AutoCAD and conducting spatial analysis in QGIS to support land management and client deliverables. Beyond these projects, I assisted with general mapping and field data collection, ensuring survey outputs were precise, well-documented, and reliable.
+
+**Tools and Technologies**
+
+Delta Quad drone, Picterra software, AutoCAD Civil 3D, QGIS, MapInfo, , Hi-Target GPS, E-Survey GPS
+
+
+**Fieldworks**
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=18, fig.height=4}
+library(jpeg)
+
+# File paths for D1 to D4
+image_paths <- paste0("C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/D", 1:4, ".jpeg")
+
+# Read images into a list
+images <- lapply(image_paths, readJPEG)
+
+# Layout: 1 row x 4 columns
+par(mfrow = c(1,4), mar = c(0,0,0,0))  # no margins for maximum image size
+
+# Loop through images and plot
+for (i in 1:4) {
+  plot(0:1, 0:1, type='n', ann=FALSE, axes=FALSE)  # empty plotting area
+  rasterImage(images[[i]], 0, 0, 1, 1)            # fill the cell
+}
+```
+
+
+
+

@@ -4,9 +4,13 @@ title: "Resume"
 
 # Education
 
-• University of British Columbia | Master of Geomatics for Environmental Management        Jul 2025 – Apr 2026 (expected completion) 
+**Master of Geomatics for Environmental Management**,                                       Jul 2025 – Apr 2026 (expected completion)
 
-• University of Mines and Technology | Bachelor of Science, Geomatic Engineering                                Oct 2018 – Sept 2022 
+*University of British Columbia*
+
+**Bachelor of Science, Geomatic Engineering**,                                                                    Oct 2018 – Sept 2022
+
+*University of Mines and Technology, (UMaT)*
 
 # Technical Skills
 
@@ -20,7 +24,9 @@ title: "Resume"
 
 # Work Experience 
 
-*Geomatic Engineer, Mac Partners Mining and Construction – Konongo, Ghana 	 	                                 Oct 2024 – July* 2025 
+**Geomatic Engineer**, Oct 2024 – July 2025 
+
+*Mac Partners Mining and Construction, Konongo*	 	                                 
 
 • Accurately set out tower cranes, CIL tanks, and ball mills using Stonex Total Station and Hi-Target equipment, ensuring precise alignment with the approved site layout.
 
@@ -31,7 +37,9 @@ title: "Resume"
 • Re-ordinated control pillars using Hi-Target GPS to maintain spatial accuracy and integrity of site control points
 
 
-*Assistant Surveyor, Point Engineering, Accra 	 	 	 	 	                          	                          Aug 2024 – Oct 2024* 
+**Assistant Surveyor**, Aug 2024 – Oct 2024 
+
+*Point Engineering, Accra*	 	 	 	 	                          	                          
 
 • Conducted comprehensive topographic and construction surveys using Trimble, Sokkia, and CHCNAV GPS systems to produce accurate topography maps and as-built documentation. 
 
@@ -39,7 +47,9 @@ title: "Resume"
 
 • Successfully surveyed and profiled a 14 km road corridor using CHCNAV GPS, providing essential data for road design and engineering planning.
 
-*Geomatic Engineer Sedzie Survey Engineering, Accra 	 	 	 	 	                                                May 2024 – Aug 2024*
+**Geomatic Engineer**, May 2024 – Aug 2024
+
+*Sedzie Survey Engineering, Accra* 	 	 	 	 	                                                
 
 • Performed detailed road profiling at designated chainages to generate accurate sectional road designs and construction data.
 
@@ -56,9 +66,11 @@ title: "Resume"
 • Conducted precise parcel demarcation using E-Survey GPS, ensuring accurate land boundary delineation.
 
 
-# Leadership/Volunteering Experience 
+# Leadership Experience 
 
-*Training Coordinator, UMaT  YouthMappers   	 	 	 	                                                         Jan 2021 – Oct 2022*
+**Training Coordinator**, Jan 2021 – Oct 2022
+
+*University of Mines and Technology, UMaT  YouthMappers*   	 	 	 	                                                         
 
 • Conducted GIS training sessions and led OpenStreetMap mapping campaigns to enhance community mapping skills and spatial data accuracy. 
 
@@ -70,7 +82,9 @@ title: "Resume"
 
 • Contributed to streetlight and hydrant mapping projects through mobile and online OSM platforms, enhancing community    infrastructure data.
 
-*Vice President, Geomatic Engineering Student Association 	 	 	                                             Jan 2021 – Nov 2021*
+**Vice President**, Jan 2021 – Nov 2021
+
+*Geomatic Engineering Student Association (GESA)*	 	                                             
 
 • Trained colleague students in using geospatial tools during tutorials organized by the department. 
 
@@ -80,7 +94,7 @@ title: "Resume"
 
 
 
-# Certifications & Technical Training 
+# Certifications 
 
 • Geospatial Python Bootcamp (12 Days) – Dec 2024 
 

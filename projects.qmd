@@ -1,10 +1,10 @@
 ---
-title: "Project"
+title: " Capstone Project"
 format: html
 editor: visual
 ---
 
-## Quarto
+## Unmanned Aerial Vehicle (UAV) Multispectral Imagery and GIS-based Approaches for Vineyard Row Identification and Segmentation in Precision Viticulture
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
