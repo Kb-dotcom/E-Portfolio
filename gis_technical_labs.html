@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -161,8 +126,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quarto" id="toc-quarto" class="nav-link active" data-scroll-target="#quarto">Quarto</a></li>
-  <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code">Running Code</a></li>
+  <li><a href="#landscape-connectivity-analysis-for-species-movement" id="toc-landscape-connectivity-analysis-for-species-movement" class="nav-link active" data-scroll-target="#landscape-connectivity-analysis-for-species-movement">Landscape Connectivity Analysis for Species Movement</a></li>
+  <li><a href="#analysis-of-fire-burn-severity-and-post-fire-vegetation-recovery-using-landsat-time-series" id="toc-analysis-of-fire-burn-severity-and-post-fire-vegetation-recovery-using-landsat-time-series" class="nav-link" data-scroll-target="#analysis-of-fire-burn-severity-and-post-fire-vegetation-recovery-using-landsat-time-series">Analysis of Fire Burn Severity and Post-Fire Vegetation Recovery Using Landsat Time-Series</a></li>
+  <li><a href="#cartographic-modelling-of-old-growth-forests-on-vancouver-island-with-forest-inventories" id="toc-cartographic-modelling-of-old-growth-forests-on-vancouver-island-with-forest-inventories" class="nav-link" data-scroll-target="#cartographic-modelling-of-old-growth-forests-on-vancouver-island-with-forest-inventories">Cartographic Modelling of Old-Growth Forests on Vancouver Island With Forest Inventories</a></li>
   </ul>
 </nav>
     </div>
@@ -188,26 +154,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="quarto" class="level2">
-<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
+<section id="landscape-connectivity-analysis-for-species-movement" class="level1">
+<h1>Landscape Connectivity Analysis for Species Movement</h1>
+<p>This project applied landscape ecology principles to evaluate structural and functional connectivity across a heterogeneous landscape using spatial analysis and network-based modeling in R. Using National Land Cover Data, landscape configuration was analyzed to understand how habitat distribution and matrix composition influence species movement and connectivity. Landscape metrics were used to quantify patch structure and spatial patterns, while network analysis techniques were employed to model potential movement pathways across the landscape. The project incorporated resistance-based modeling to simulate species-specific movement scenarios for ducks and spotted owls, accounting for differences in habitat preference and dispersal ability. Graphs and grains of connectivity models were developed across multiple thresholds to assess connectivity sensitivity at different spatial scales. The results highlight how landscape structure, habitat quality, and movement assumptions interact to shape ecological connectivity, demonstrating the value of connectivity modeling for conservation planning and landscape-scale environmental decision-making</p>
+<p><strong>Key methods and Data</strong></p>
+<p>Landscape ecology and connectivity theory, Structural and functional connectivity analysis, Network analysis, National Land Cover Data (NLCD)</p>
+<p><strong>Tools</strong></p>
+<p>Rstudio (landscapemetrics- Core area metric, Aggregation metric, Area and Edge metric)</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="gis_technical_labs_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="1344"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="running-code" class="level2">
-<h2 class="anchored" data-anchor-id="running-code">Running Code</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<section id="analysis-of-fire-burn-severity-and-post-fire-vegetation-recovery-using-landsat-time-series" class="level1">
+<h1>Analysis of Fire Burn Severity and Post-Fire Vegetation Recovery Using Landsat Time-Series</h1>
+<p>The Prouton Lakes wildfire (2017) in the Alex Fraser Research Forest, BC, was examined for burn intensity and post-fire vegetation recovery using Landsat 8 surface reflectance time-series (2013-2021). Burn severity was assessed using the normalized burn ratio (NBR) and delta NBR (dNBR), which allowed impacted areas to be classified as unburned, low, medium, or high severity. Vegetation recovery was assessed by observing NDVI trends across burn severity classes for four years after the fire. Time-series composites, supervised classifiers, and statistical visualizations were used to investigate regional patterns of fire effects and vegetation recovery. This study highlights the use of remote sensing and spatial analysis in landscape ecology to aid in wildfire impact assessment and ecosystem management decisions.</p>
+<p><strong>Key methods and Data</strong></p>
+<p>Remote sensing analysis using Landsat 8 OLI Level-2 surface reflectance data, Vegetation and burn indices: NDVI, NBR, dNBR, Time-series processing and compositing for multiple years, Raster pre-processing: masking, cropping, and QA filtering</p>
+<p><strong>Tools</strong></p>
+<p>Rstudio (raster/terra, ggplot2)</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="gis_technical_labs_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="1344"></p>
+</figure>
 </div>
 </div>
-<p>You can add options to executable code like this</p>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="gis_technical_labs_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid figure-img" width="1344"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="cartographic-modelling-of-old-growth-forests-on-vancouver-island-with-forest-inventories" class="level1">
+<h1>Cartographic Modelling of Old-Growth Forests on Vancouver Island With Forest Inventories</h1>
+<p>Although old-growth forests provide important ecological, biological, and wood resources, they are under threat from logging and human disturbances. This lab investigates the distribution of prospective old-growth stands on Vancouver Island, British Columbia, utilizing VRI data, land ownership layers, human disturbance data, and landscape units. Forest polygons were filtered to include managed crown forests, which were then divided into Seral Stages based on age and BEC zone, and human disturbances were adjusted. The percentage of old-growth forest was estimated for each Landscape Unit-BEC combination and compared to provincial targets. Cartographic modelling was used to depict the data, resulting in maps and tables that show locations that exceeded or fell short of the old-growth target. This workflow demonstrates how GIS and Python-based spatial analysis can help with forest management and conservation planning.</p>
+<p><strong>Key methods and Data</strong></p>
+<p>Subsetting VRI polygons to managed forests and extracting relevant attributes, Identifying crown forests using land ownership and human disturbance layers, Assigning Seral Stages (Early, Mid, Mature, Old) based on BEC zones and projected stand age; resetting stages in disturbed areas, Vegetation Resource Inventory 2024 (vancouver_island_vri), Generalized Forest Cover Ownership (vancouver_island_own)</p>
+<p><strong>Tools</strong></p>
+<p>ArcGIS Pro, Python, SQL</p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="gis_technical_labs_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
 </div>
 </div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+</div>
 
 
 </section>

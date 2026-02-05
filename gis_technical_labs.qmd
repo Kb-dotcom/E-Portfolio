@@ -4,23 +4,126 @@ format: html
 editor: visual
 ---
 
-## Quarto
+# Landscape Connectivity Analysis for Species Movement
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+This project applied landscape ecology principles to evaluate structural and functional connectivity across a heterogeneous landscape using spatial analysis and network-based modeling in R. Using National Land Cover Data, landscape configuration was analyzed to understand how habitat distribution and matrix composition influence species movement and connectivity. Landscape metrics were used to quantify patch structure and spatial patterns, while network analysis techniques were employed to model potential movement pathways across the landscape. The project incorporated resistance-based modeling to simulate species-specific movement scenarios for ducks and spotted owls, accounting for differences in habitat preference and dispersal ability. Graphs and grains of connectivity models were developed across multiple thresholds to assess connectivity sensitivity at different spatial scales. The results highlight how landscape structure, habitat quality, and movement assumptions interact to shape ecological connectivity, demonstrating the value of connectivity modeling for conservation planning and landscape-scale environmental decision-making
 
-## Running Code
+**Key methods and Data**
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+Landscape ecology and connectivity theory, Structural and functional connectivity analysis, Network analysis, National Land Cover Data (NLCD)
 
-```{r}
-1 + 1
+**Tools**
+
+Rstudio (landscapemetrics- Core area metric, Aggregation metric, Area and Edge metric)
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=14, fig.height=6}
+library(png)
+
+# Absolute file paths for P1 and P2
+image_paths <- c(
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/p1.png",
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/p2.png"
+)
+
+# Corresponding captions
+captions <- c(
+  "Least Cost Connectivity of Owl Habitat Patches",
+  "Landscape Resistance Map for Owl Habitat"
+)
+
+# Read images
+imgs <- lapply(image_paths, readPNG)
+
+# Layout: 1 row x 2 columns
+par(mfrow = c(1,2), mar = c(3,2,3,2))  # margins for captions
+
+# Loop through images and plot
+for(i in 1:2){
+  plot(0:1, 0:1, type="n", axes=FALSE, ann=FALSE)   # empty plot
+  rasterImage(imgs[[i]], 0, 0, 1, 1)               # fill the cell
+  mtext(bquote(bold(.(captions[i]))), side=3, line=1, cex=1.1)  # bold + larger  # caption above image
+}
+
 ```
 
-You can add options to executable code like this
+# Analysis of Fire Burn Severity and Post-Fire Vegetation Recovery Using Landsat Time-Series
 
-```{r}
-#| echo: false
-2 * 2
+The Prouton Lakes wildfire (2017) in the Alex Fraser Research Forest, BC, was examined for burn intensity and post-fire vegetation recovery using Landsat 8 surface reflectance time-series (2013-2021). Burn severity was assessed using the normalized burn ratio (NBR) and delta NBR (dNBR), which allowed impacted areas to be classified as unburned, low, medium, or high severity. Vegetation recovery was assessed by observing NDVI trends across burn severity classes for four years after the fire. Time-series composites, supervised classifiers, and statistical visualizations were used to investigate regional patterns of fire effects and vegetation recovery. This study highlights the use of remote sensing and spatial analysis in landscape ecology to aid in wildfire impact assessment and ecosystem management decisions.
+
+**Key methods and Data**
+
+Remote sensing analysis using Landsat 8 OLI Level-2 surface reflectance data, Vegetation and burn indices: NDVI, NBR, dNBR, Time-series processing and compositing for multiple years, Raster pre-processing: masking, cropping, and QA filtering
+
+**Tools**
+
+Rstudio (raster/terra, ggplot2)
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=14, fig.height=6}
+library(png)
+
+# Absolute file paths for P1 and P2
+image_paths <- c(
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/rs3.png",
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/rs4.png",
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/rs2.png",
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/rs1.png"
+)
+
+# Corresponding captions
+captions <- c(
+  "Yearly Mean Normalized Burn Ratio (NBR)",
+  "Yearly Mean Normalized Diffrential Vegetation Index (NDVI)",
+  "Prouton Lakes Fire Burn Severity",
+  "NDVI Recovery at Different Burn Severity Levels"
+)
+
+# Read images
+imgs <- lapply(image_paths, readPNG)
+
+# Layout: 1 row x 2 columns
+par(mfrow = c(1,2), mar = c(3,2,3,2))  # margins for captions
+
+# Loop through images and plot
+for(i in 1:4){
+  plot(0:1, 0:1, type="n", axes=FALSE, ann=FALSE)   # empty plot
+  rasterImage(imgs[[i]], 0, 0, 1, 1)               # fill the cell
+  mtext(bquote(bold(.(captions[i]))), side=3, line=1, cex=1.1)  # bold + larger  # caption above image
+}
+
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+# Cartographic Modelling of Old-Growth Forests on Vancouver Island With Forest Inventories
+
+Although old-growth forests provide important ecological, biological, and wood resources, they are under threat from logging and human disturbances. This lab investigates the distribution of prospective old-growth stands on Vancouver Island, British Columbia, utilizing VRI data, land ownership layers, human disturbance data, and landscape units. Forest polygons were filtered to include managed crown forests, which were then divided into Seral Stages based on age and BEC zone, and human disturbances were adjusted. The percentage of old-growth forest was estimated for each Landscape Unit-BEC combination and compared to provincial targets. Cartographic modelling was used to depict the data, resulting in maps and tables that show locations that exceeded or fell short of the old-growth target. This workflow demonstrates how GIS and Python-based spatial analysis can help with forest management and conservation planning.
+
+**Key methods and Data**
+
+Subsetting VRI polygons to managed forests and extracting relevant attributes, Identifying crown forests using land ownership and human disturbance layers, Assigning Seral Stages (Early, Mid, Mature, Old) based on BEC zones and projected stand age; resetting stages in disturbed areas, Vegetation Resource Inventory 2024 (vancouver_island_vri), Generalized Forest Cover Ownership (vancouver_island_own)
+
+**Tools**
+
+ArcGIS Pro, Python, SQL
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=8}
+library(png)
+
+# File path for the image
+image_path <- "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/gis1.png"
+
+# Caption
+caption <- "Forested Areas of Vancouver Island Showing Threshold of Biogeoclimatic (BEC) Subzones"
+
+# Read image
+img <- readPNG(image_path)
+
+# Layout: 1 row x 1 column
+par(mfrow = c(1,1), mar = c(5,2,5,2))  # extra margin for bold caption
+
+# Plot image
+plot(0:1, 0:1, type="n", axes=FALSE, ann=FALSE)
+rasterImage(img, 0, 0, 1, 1)
+
+# Add bold caption above the image
+mtext(bquote(bold(.(caption))), side=3, line=1, cex=1.2)
+
+```

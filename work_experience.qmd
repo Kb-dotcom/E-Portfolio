@@ -4,16 +4,13 @@ format: html
 editor: visual
 ---
 
-
 ## Gold Processing Plant Refurbishment & Construction at Northern Ashanti Mine (NAM)
 
-At Mac Partners Mining and Construction, I played an active role in the construction of a gold processing plant at Northern Ashanti Mine (NAM). My responsibilities went beyond field surveying, including reading and interpreting engineering and site plans, coordinating with site engineers, and inspecting operations alongside mine surveyors to ensure alignment with design specifications. In the field, I set out tower cranes, CIL tanks, and ball mills using Stonex Total Station and Hi-Target GNSS, and established anchor bolt positions for major structural components to guarantee precise installation. I verified excavation levels using a Bosch dumpy level, optimizing cut-and-fill operations, and re-established survey control pillars to maintain the accuracy and integrity of site measurements.
-Through this combination of fieldwork, technical analysis, and collaboration, I contributed to the efficiency and safety of mining operations, ensuring construction activities adhered to approved plans while maintaining spatial accuracy across the site.
+At Mac Partners Mining and Construction, I played an active role in the construction of a gold processing plant at Northern Ashanti Mine (NAM). My responsibilities went beyond field surveying, including reading and interpreting engineering and site plans, coordinating with site engineers, and inspecting operations alongside mine surveyors to ensure alignment with design specifications. In the field, I set out tower cranes, CIL tanks, and ball mills using Stonex Total Station and Hi-Target GNSS, and established anchor bolt positions for major structural components to guarantee precise installation. I verified excavation levels using a Bosch dumpy level, optimizing cut-and-fill operations, and re-established survey control pillars to maintain the accuracy and integrity of site measurements. Through this combination of fieldwork, technical analysis, and collaboration, I contributed to the efficiency and safety of mining operations, ensuring construction activities adhered to approved plans while maintaining spatial accuracy across the site.
 
 **Tools & Technologies**
 
 South total station, Stonex R35 total station,Sokkia 530r total station, Hi-Target V300 GNSS, Bosch dumpy level, AutoCad Civil 3D, MapInfo
-
 
 **Field Operations**
 
@@ -74,8 +71,8 @@ During my time at Point Engineering, I contributed to a variety of building, roa
 
 Trimble total station, Trimble GPS, Sokkia 530r total station, CHC NAV GPS, AutoCad Civil 3D
 
-
 **Fieldworks**
+
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=16, fig.height=8}
 library(jpeg)
 
@@ -97,7 +94,6 @@ for (i in 1:8) {
 
 ```
 
-
 ## Drone Mapping & Cadastral/Topographical Surveys
 
 Contributions at AM Surveys Ltd involved a range of survey and mapping projects that integrated drone-based imagery, topographical surveys, cadastral work, and GIS analysis. Operating the Delta Quad drone, I collected high-resolution aerial imagery to monitor waterbody conditions and mapped aquatic vegetation using Picterra software, generating actionable data for environmental assessments. I also performed cadastral and topographical surveys, creating accurate plots in AutoCAD and conducting spatial analysis in QGIS to support land management and client deliverables. Beyond these projects, I assisted with general mapping and field data collection, ensuring survey outputs were precise, well-documented, and reliable.
@@ -105,7 +101,6 @@ Contributions at AM Surveys Ltd involved a range of survey and mapping projects 
 **Tools and Technologies**
 
 Delta Quad drone, Picterra software, AutoCAD Civil 3D, QGIS, MapInfo, , Hi-Target GPS, E-Survey GPS
-
 
 **Fieldworks**
 
@@ -127,7 +122,3 @@ for (i in 1:4) {
   rasterImage(images[[i]], 0, 0, 1, 1)            # fill the cell
 }
 ```
-
-
-
-
