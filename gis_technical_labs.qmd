@@ -128,4 +128,39 @@ mtext(bquote(bold(.(caption))), side=3, line=1, cex=1.2)
 
 ```
 
-# 
+# Machine Learning Techniques to Classify Deciduous or Coniferous Trees in the Petawawa Research Forest
+
+Accurate mapping of coniferous and deciduous tree species is essential for effective forest management, ecosystem monitoring, and long-term environmental planning. These forest types differ in growth patterns, ecological functions, and carbon storage potential, making their spatial delineation critical for decision-making. Advances in remote sensing and machine learning have created new opportunities to classify forest composition using spectral and structural information derived from satellite and aerial imagery. This project evaluated the performances of machine-learning classifiers (Random Forest (RF) and Support Vector Machine (SVM)), for distinguishing coniferous and deciduous trees within the Petawawa Research Forest. Both models were trained using the same set of predictor variables and reference data so that their performance could be compared fairly. Accuracy was assessed using classification metrics, including overall accuracy, precision, recall, and confusion matrices, along with model computation time. This direct comparison highlights how Random Forest and Support Vector Machine differ in both classification performance and efficiency, providing practical insight into their suitability for conifer and deciduous tree mapping in Canadian forest landscapes
+
+**Key methods and Data**
+
+Supervised machine learning classification of forest cover into coniferous and deciduous classes, Training and testing of two classifiers: Random Forest and Support Vector Machine, Comparison of model performance based on both classification accuracy and computation time, Airborne LiDAR 
+
+**Tools**
+
+Arcgis Pro, Python, Scikit learn
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=8}
+library(png)
+
+# File path for the image
+image_path <- "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/Py1.png"
+
+# Caption
+caption <- "Comparing SVM and RF classifiers performance on coniferous and deciduous tree species"
+
+# Read image
+img <- readPNG(image_path)
+
+# Layout: 1 row x 1 column
+par(mfrow = c(1,1), mar = c(5,2,5,2))  # extra margin for bold caption
+
+# Plot image
+plot(0:1, 0:1, type="n", axes=FALSE, ann=FALSE)
+rasterImage(img, 0, 0, 1, 1)
+
+# Add bold caption above the image
+mtext(bquote(bold(.(caption))), side=3, line=1, cex=1.2)
+
+```
+
