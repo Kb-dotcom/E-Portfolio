@@ -6,21 +6,64 @@ editor: visual
 
 ## Unmanned Aerial Vehicle (UAV) Multispectral Imagery and GIS-based Approaches for Vineyard Row Identification and Segmentation in Precision Viticulture
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
-## Running Code
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
-```{r}
-1 + 1
+
+
+
+
+
+
+
+
+
+## Crime Analysis and Assessment using Data Mining Techniques
+
+Crimes are actions committed in violation of the law. These crime activities have increased over the years due to high standards of living, unemployment, etc. which need to be curbed to ensure a safe society. Law enforcement agencies can effectively curb the canker by analysing previous crimes to understand the pattern of occurrence of these crimes to gather intelligence to tackle the situation effectively. Initially, law enforcement agencies carry out analysis of crimes on papers or use analogue techniques which is time consuming and tedious as one may have to deal with large paper sizes. In recent years, digital techniques such as the use of artificial intelligence which have proven to be better than traditional techniques are been used to carry out various analyses of crime data. This study has employed digital techniques such as data mining to analyse crime data in Chicago. The techniques used were the Random Forest classifier and Decision tree which were used to analyse and classify crimes into low, medium and high crimes. In comparison to the
+Decision tree, the Random Forest classifier outperformed it. Accuracy, precision, and recall for the Random Forest classifier are, respectively, 77%, 77%, and 77%. However, the decision trees' values for accuracy, precision, and recall are 75%, 75%, and 76%,
+respectively. Additionally, a map of crime hotspots was created using an analysis of
+Chicago's historical crime data to show security agencies where crimes are most likely to occur
+
+**Key methods and Data**
+
+Data mining techniques (decision trees and random forest classifiers) for crime prediction and analysis, Spatial clustering, Secondary data obtained from Chicago Police Department Statistics Portal
+
+**Tools**
+
+Openstreetmap, Google colab
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=14, fig.height=6}
+library(png)
+
+# Absolute file paths for P1 and P2
+image_paths <- c(
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/C1.png",
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/C2.png",
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/C3.png",
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/C4.png"
+)
+
+# Corresponding captions
+captions <- c(
+  " Crimes Location on a Map",
+  "Hotspot Areas of Crimes",
+  "Crimes Heatmap",
+  "Comparison of the Two Classification Techniques"
+)
+
+# Read images
+imgs <- lapply(image_paths, readPNG)
+
+# Layout: 1 row x 2 columns
+par(mfrow = c(1,2), mar = c(3,2,3,2))  # margins for captions
+
+# Loop through images and plot
+for(i in 1:4){
+  plot(0:1, 0:1, type="n", axes=FALSE, ann=FALSE)   # empty plot
+  rasterImage(imgs[[i]], 0, 0, 1, 1)               # fill the cell
+  mtext(bquote(bold(.(captions[i]))), side=3, line=1, cex=1.1)  # bold + larger  # caption above image
+}
+
 ```
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
