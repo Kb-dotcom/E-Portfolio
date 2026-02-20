@@ -56,7 +56,7 @@ Remote sensing analysis using Landsat 8 OLI Level-2 surface reflectance data, Ve
 
 **Tools**
 
-Rstudio (raster/terra, ggplot2)
+Rstudio (raster, terra, ggplot2)
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=14, fig.height=6}
 library(png)
@@ -134,7 +134,7 @@ Accurate mapping of coniferous and deciduous tree species is essential for effec
 
 **Key methods and Data**
 
-Supervised machine learning classification of forest cover into coniferous and deciduous classes, Training and testing of two classifiers: Random Forest and Support Vector Machine, Comparison of model performance based on both classification accuracy and computation time, Airborne LiDAR 
+Supervised machine learning classification of forest cover into coniferous and deciduous classes, Training and testing of two classifiers: Random Forest and Support Vector Machine, Comparison of model performance based on both classification accuracy and computation time, Airborne LiDAR
 
 **Tools**
 
@@ -163,4 +163,132 @@ rasterImage(img, 0, 0, 1, 1)
 mtext(bquote(bold(.(caption))), side=3, line=1, cex=1.2)
 
 ```
+
+
+# Terrain-Based Stream Network Delineation and Riparian Reserve Mapping in the Nahmint Watershed, British Columbia
+
+
+Digital terrain analysis and hydrological modelling were employed to delineate stream networks, determine stream order, and set riparian reserve buffers within the Nahmint watershed in British Columbia. A Digital Elevation Model (DEM) served as the foundation for modelling surface flow processes and deriving watershed characteristics through raster-based hydrological tools. The DEM was initially preprocessed to eliminate sinks and ensure continuous flow routing across the landscape. Flow direction and flow accumulation rasters were generated using the D8 algorithm, and a stream network was extracted using a specified accumulation threshold. Stream order was assigned using the Strahler classification method, and raster stream outputs were converted into vector features to facilitate further spatial analysis. Stream gradients were calculated from elevation differences along individual segments. Using these gradient values and observed channel characteristics, streams were classified according to provincial riparian management guidelines (S1–S6). Corresponding buffer distances for Riparian Reserve Zones and Riparian Management Zones were then applied based on stream class criteria. Watershed boundaries and contour lines were also derived to support terrain interpretation and contextual analysis. The results highlight the effectiveness of DEM-based hydrological modelling for systematic stream delineation and standardised riparian buffer mapping in forested environments.
+
+
+**Key methods and Data**
+
+Watershed delineation, DEM preprocessing, Stream network extraction using accumulation threshold, Contour generation, Digital Elevation Model (DEM) of the Nahmint watershed, Riparian Reserve and Management Zone buffer generation
+
+
+**Tools**
+
+ArcGIS Pro (Spatial Analyst Extension), QGIS for DEM access and export
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=10, fig.height=8}
+library(png)
+
+# File path for the image
+image_path <- "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/riparian1.png"
+
+# Caption
+caption <- "Riparian Management Analysis"
+
+# Read image
+img <- readPNG(image_path)
+
+# Layout: 1 row x 1 column
+par(mfrow = c(1,1), mar = c(5,2,5,2))  # extra margin for bold caption
+
+# Plot image
+plot(0:1, 0:1, type="n", axes=FALSE, ann=FALSE)
+rasterImage(img, 0, 0, 1, 1)
+
+# Add bold caption above the image
+mtext(bquote(bold(.(caption))), side=3, line=1, cex=1.2)
+
+```
+
+
+# Estimating Forest Attributes Using Airborne LiDAR Metrics and Statistical Modeling Approaches
+
+
+Airborne LiDAR data were processed to derive terrain models, canopy-structure metrics, and wall-to-wall estimates of net stem volume for the Malcolm Knapp Research Forest (MKRF). Multiple. las tiles were managed using a LAScatalog workflow in R to enable efficient processing of the full dataset. Duplicate points were identified and removed before analysis. A Digital Elevation Model (DEM) was generated from ground-classified returns using TIN interpolation and subsequently used to normalize point cloud heights. A Canopy Height Model (CHM) was derived from normalized data to evaluate vegetation structure and confirm data quality. Circular forest plots were extracted from the normalized point cloud, and standard LiDAR metrics describing vegetation height, cover, and structural complexity were calculated for each plot using first returns above 2 m. These metrics were combined with field-measured net stem volume data to develop ordinary least squares regression models. A forward variable selection approach was applied to identify a simple and efficient predictive model. The final model was then applied across the entire study area by calculating pixel-level LiDAR metrics and generating a spatially continuous estimate of stem volume. Although the resulting model demonstrated moderate explanatory power, limitations associated with temporal mismatches between field and LiDAR data, variable-radius plot design, and limited structural variability among plots likely constrained predictive accuracy. The lab demonstrates the complete workflow for LiDAR-based Forest attribute estimation, from raw point cloud processing to spatial model application.
+
+
+**Key methods and Data**
+
+Quality control of point cloud data, Digital Elevation Model (DEM) generation using ground-classified returns, Height normalization of LiDAR point clouds using DEM subtraction, Wall-to-wall application of the selected model using pixel-based LiDAR metrics, Airborne LiDAR point cloud data (.las format) covering Malcolm Knapp Research Forest (MKRF), RGB aerial orthophoto (GeoTIFF format)
+
+
+**Tools**
+
+Rstudio (lidR, terra, tidyverse)
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=14, fig.height=6}
+library(png)
+
+# Absolute file paths for P1 and P2
+image_paths <- c(
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/metrics1.png",
+  "C:/Users/kb90.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/images/wall_to_wall1.png"
+)
+
+# Corresponding captions
+captions <- c(
+  "Plot of the various rasters created by grid_metrics",
+  "Predicted volume across the Malcolm Knapp Research Forest"
+)
+
+# Read images
+imgs <- lapply(image_paths, readPNG)
+
+# Layout: 1 row x 2 columns
+par(mfrow = c(1,2), mar = c(3,2,3,2))  # margins for captions
+
+# Loop through images and plot
+for(i in 1:2){
+  plot(0:1, 0:1, type="n", axes=FALSE, ann=FALSE)   # empty plot
+  rasterImage(imgs[[i]], 0, 0, 1, 1)               # fill the cell
+  mtext(bquote(bold(.(captions[i]))), side=3, line=1, cex=1.1)  # bold + larger  # caption above image
+}
+
+```
+
+
+# Spatial Statistics to Enhance Classical Statistical Modelling of Spatial Data
+
+
+Spatial statistics enhances classical statistical modelling by explicitly accounting for location-dependent relationships in georeferenced data. Incorporating spatial autocorrelation and measurement scales allows classical methods such as simple linear regression, ANOVA, and multiple linear regression to be applied more effectively in spatial contexts. Geostatistical methods, including kriging and spatial interpolation, enable accurate prediction at unobserved locations and reconstruction of continuous surfaces, improving model reliability and reducing bias. Integrating spatial considerations uncovers patterns and dependencies that classical methods alone may overlook, providing a robust framework for exploratory analysis, inference, and prediction in complex spatial datasets.
+
+
+**Skills Acquired**
+
+
+Managed and analyzing georeferenced spatial data (geostatistical, areal, point patterns).
+
+Assessed and interpreting spatial autocorrelation.
+
+Applied SLR, ANOVA, and MLR in spatial contexts.
+
+Performed data transformations and residual diagnostics for spatial models.
+
+Conducted kriging and geostatistical interpolation for spatial prediction.
+
+
+# Effective Communication and Multidisciplinary Knowledge for Sustainable Natural Resource
+
+
+Effective management of natural resources requires not only technical expertise but also the ability to integrate diverse knowledge systems and communicate insights clearly to stakeholders. Through this MGEM module, I engaged with sustainable resource management concepts, explored traditional and scientific knowledge integration, and applied professional communication strategies to convey complex information effectively. Emphasis was placed on understanding spatial variability, stakeholder perspectives, and interdisciplinary approaches to decision-making. The learning experience strengthened both analytical and communication competencies, preparing me to contribute meaningfully to sustainable natural resource initiatives.
+
+
+**Skills Acquired**
+
+Integration of multidisciplinary knowledge for resource management.
+
+Professional communication with diverse stakeholders.
+
+Spatial data interpretation and analysis.
+
+Collaborative problem-solving and decision-making.
+
+
+
 
