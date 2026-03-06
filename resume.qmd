@@ -18,7 +18,7 @@ title: "Resume"
 
 • Surveying Tools: AutoCAD Civil 3D, Topcon Tools, Magnet Tools, MapInfo 
 
-• Programming & Data Science: Python (Intermediate), R (Intermediate), Java (OpenStreetMap API) 
+• Programming & Data Science: Python, R studio, Java (OpenStreetMap API) 
 
 • Equipment Proficiency: Total station, GPS, Dumpy Level 
 
@@ -96,10 +96,12 @@ title: "Resume"
 
 # Certifications 
 
-• Geospatial Python Bootcamp (12 Days) – Dec 2024 
+• Drone Piloting and Data Processing, Soko Aerial Robotics
 
-• GIS for Climate Action (Esri MOOC) – Dec 2023 
+• Geospatial Python Bootcamp   
 
-• QGIS Training Program (21 Days) – Jul 2020 
+• GIS for Climate Action (Esri MOOC) 
 
-• Drone Piloting and Data Processing, Soko Aerial Robotics – Jun 2019 
+• QGIS Training Program 
+
+

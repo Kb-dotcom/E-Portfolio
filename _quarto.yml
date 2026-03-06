@@ -13,7 +13,7 @@ website:
       - href: projects.qmd
         text: Academic Projects
       - href: gis_technical_labs.qmd
-        text: GIS & Technical Work
+        text: Technical Work
       - href: work_experience.qmd
         text: Professional Experience
        
